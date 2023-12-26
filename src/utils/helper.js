@@ -7,18 +7,14 @@ import {
   FaLinkedinIn,
   FaRenren,
   FaUser,
-  FaYoutube,
+  FaWhatsapp,
 } from "react-icons/fa6";
 import {
-  ChatApp,
-  CodePenClone,
-  FreshJuiceUI,
-  ImageSharing,
-  OpenAI,
-  PixabayClone,
-  PortfolioFirebase,
-  RestaurantClone,
-  SocialMedia,
+  chat,
+  cryptohub,
+  Fintech,
+  shoppy,
+
 } from "../assets";
 
 export const Socials = [
@@ -31,19 +27,19 @@ export const Socials = [
   {
     id: `linkedin-${Date.now()}`,
     Icon: FaLinkedinIn,
-    uril: "",
+    uril: "https://www.linkedin.com/in/akande-olawole-10a34a288/",
     color: "#0072b1",
   },
   {
     id: `github-${Date.now()}`,
     Icon: FaGithub,
-    uril: "",
+    uril: "https://github.com/timmytunez",
     color: "#fff",
   },
   {
-    id: `youtube-${Date.now()}`,
-    Icon: FaYoutube,
-    uril: "",
+    id: `whatsapp-${Date.now()}`,
+    Icon: FaWhatsapp,
+    uril: "https://web.facebook.com/profile.php?id=100093241536425",
     color: "#ff0000",
   },
 ];
@@ -84,56 +80,27 @@ export const Menus = [
 export const ProjectsData = [
   {
     id: `food-${Date.now()}`,
-    name: "Single Food Restaurant",
-    imgSrc: RestaurantClone,
-    gitURL: "https://github.com/Vetrivel-VP",
+    name: "E-commerce Shoppy",
+    imgSrc: shoppy,
+    gitURL: "https://github.com/timmytunez/my-store",
   },
   {
     id: `codepen-${Date.now()}`,
-    name: "CodePen Clone",
-    imgSrc: CodePenClone,
-    gitURL: "https://github.com/Vetrivel-VP",
+    name: "cryptohub",
+    imgSrc: cryptohub,
+    gitURL: "https://github.com/timmytunez/crytohub",
   },
   {
-    id: `openai-${Date.now()}`,
-    name: "OpenAI",
-    imgSrc: OpenAI,
-    gitURL: "https://github.com/Vetrivel-VP",
+    id: `chatApp-${Date.now()}`,
+    name: "chatApp",
+    imgSrc: chat,
+    gitURL: "https://github.com/timmytunez/chatapp",
   },
   {
-    id: `chatapp-${Date.now()}`,
-    name: "Chat App Build",
-    imgSrc: ChatApp,
-    gitURL: "https://github.com/Vetrivel-VP",
+    id: `fintech-${Date.now()}`,
+    name: "Fintech",
+    imgSrc: Fintech,
+    gitURL: "https://github.com/timmytunez/fintech-",
   },
-  {
-    id: `imageSharing-${Date.now()}`,
-    name: "Image Sharing App",
-    imgSrc: ImageSharing,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `pixabayclone-${Date.now()}`,
-    name: "Pixabay Clone 2.0",
-    imgSrc: PixabayClone,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `freshjuiceui-${Date.now()}`,
-    name: "Fresh Juice UI Build",
-    imgSrc: FreshJuiceUI,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `socialmedia-${Date.now()}`,
-    name: "Social Media App",
-    imgSrc: SocialMedia,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `portfoliofirebase-${Date.now()}`,
-    name: "Portfolio UI Fireabse",
-    imgSrc: PortfolioFirebase,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
+
 ];

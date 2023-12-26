@@ -26,3 +26,10 @@ body,
 html {
   scroll-behavior: smooth;
 }
+
+.img{
+  
+ width: 400px;
+ height: 400px;
+
+}

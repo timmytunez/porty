@@ -1,6 +1,6 @@
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Hero } from '../assets'
+import { hero } from '../assets'
 import { HeroTypeWritter, HomeSocialLinks } from '../components'
 import { Socials } from '../utils/helper'
 
@@ -18,36 +18,35 @@ const Home = () => {
             </span>
           </h2>
           {/* typewiter */}
-            <h2 className='text-2xl lg:text-4xl mt-4 text-texlight'>
-              And I'm{" "}
-              <HeroTypeWritter speed={100} words={["a Developer..", "a YouTuber..", "a Freelanzer.."]}/>
-            </h2>
-            <p className='text-base text-texlight mt-6 text-center lg:text-left'>  
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet fugiat harum qui nesciunt? Modi vel, molestias dignissimos a mollitia earum excepturi incidunt ipsam et, enim ducimus, ab ullam libero! Quia.
-            </p>
-            {/* social media links */}
-            <div className="flex items-center justify-center gap-10 mt-16">
-              <AnimatePresence>
-                {Socials && Socials.map((item, index) => (
-                  <HomeSocialLinks key={index} data={item} index={index} />
-                ))}
-              </AnimatePresence>
-            </div>
+          <h2 className='text-2xl lg:text-4xl mt-4 text-texlight'>
+            And I'm{" "}
+            <HeroTypeWritter speed={100} words={["a Front-end dev..", "a mobile-app dev..", "a Freelanzer.."]} />
+          </h2>
+          <p className='text-base text-texlight mt-6 text-center lg:text-left font-sans font-bold'>
+            a passionate front-end developer with a knack for creating seamless and engaging user experiences. My journey into the world of web development began with a comprehensive Full Stack course at Gomycode, where I earned a certificate showcasing my commitment to mastering the intricacies of modern web technologies.            </p>
+          {/* social media links */}
+          <div className="flex items-center justify-center gap-10 mt-16">
+            <AnimatePresence>
+              {Socials && Socials.map((item, index) => (
+                <HomeSocialLinks key={index} data={item} index={index} />
+              ))}
+            </AnimatePresence>
+          </div>
 
-            {/* hire me  */}
-            <a href="/"
-            style={{boxShadow: "inset 0px 0px 10px rgba(255,255,255,0.3)"}}
+          {/* hire me  */}
+          <a href="/"
+            style={{ boxShadow: "inset 0px 0px 10px rgba(255,255,255,0.3)" }}
             className="mt-12 border border-[rgba(255,255,255,0.3)]
             rounded-xl px-8 py-3 active:95 group hover:border-primary"
-            >
-              <p className='text-texlight group-hover:text-transparent group-hover:bg-clip-text
+          >
+            <p className='text-texlight group-hover:text-transparent group-hover:bg-clip-text
               group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary'>
-                Hire Me
-              </p>
-            </a>
+              Hire Me
+            </p>
+          </a>
         </div>
         {/* hero image */}
-        <div>
+        <div className=''>
           <motion.img
             initial={{ y: 0 }}
             animate={{ y: [-10, 10, -10] }}
@@ -56,8 +55,8 @@ const Home = () => {
               duration: 2,
               ease: "linear"
             }}
-            src={Hero}
-            className='w-auto h-auto object-contain'
+            src={hero}
+            className='img rounded-t-full bg-gradient-to-br from bg-white'
           />
         </div>
       </div>

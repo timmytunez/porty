@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Leaf1, Leaf2 } from '../assets'
 
 const Contact = () => {
+  const [data, setdata] = useState({
+    firstName:"",
+    lastName:"",
+    email:"",
+    message:"",
+  })
+  const handleTextChange = (e) => {
+    const {name, value} = e.target
+    // update the state for the corresponding input values
+    setdata((prevData) => ({...prevData, [name]: value }));
+  }
   return (
     <section id='contact' className='flex items-center justify-center flex-col gap-12 my-2'>
       {/* title */}
@@ -29,17 +40,21 @@ const Contact = () => {
             <input
               name='firstName'
               type="text"
+              onChange={handleTextChange}
+              value={data.firstName}
               placeholder='first Name'
               className='w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)]
-          bg-transparent focus:border-primary outline-none'
+          bg-transparent focus:border-primary outline-none text-texlight'
             />
 
             <input
               name='lastName'
               type="text"
+              onChange={handleTextChange}
+              value={data.lastName}
               placeholder='Last Name'
               className='w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)]
-          bg-transparent focus:border-primary outline-none'
+          bg-transparent focus:border-primary outline-none text-texlight'
             />
           </div>
 
@@ -47,13 +62,17 @@ const Contact = () => {
           <input
             name='email'
             type="email"
+            onChange={handleTextChange}
+            value={data.email}
             placeholder='Email'
             className='w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)]
-          bg-transparent focus:border-primary outline-none'
+          bg-transparent focus:border-primary outline-none text-texlight'
           />
           <textarea name="message" id="" cols="0" rows="10"
+           onChange={handleTextChange}
+           value={data.message}
           className='w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)]
-          bg-transparent focus:border-primary outline-none'
+          bg-transparent focus:border-primary outline-none text-texlight'
           placeholder='Message here...'
           ></textarea>
 
