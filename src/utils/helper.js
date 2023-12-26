@@ -58,7 +58,7 @@ export const Menus = [
     name: "About",
   },
   {
-    id: `skills-${Date.now()}`,
+    id: `skills-${Date.now()}`, 
     Icon: FaRenren,
     uri: "#skills",
     name: "Skills",
@@ -90,17 +90,17 @@ export const ProjectsData = [
     imgSrc: cryptohub,
     gitURL: "https://github.com/timmytunez/crytohub",
   },
-  {
-    id: `chatApp-${Date.now()}`,
-    name: "chatApp",
-    imgSrc: chat,
-    gitURL: "https://github.com/timmytunez/chatapp",
-  },
+  // {
+  //   id: `chatApp-${Date.now()}`,
+  //   name: "chatApp",
+  //   imgSrc: chat,
+  //   gitURL: "https://github.com/timmytunez/chatapp",
+  // },
   {
     id: `fintech-${Date.now()}`,
-    name: "Fintech",
+    name: "university website",
     imgSrc: Fintech,
-    gitURL: "https://github.com/timmytunez/fintech-",
+    gitURL: "https://github.com/timmytunez/university-website",
   },
 
 ];
