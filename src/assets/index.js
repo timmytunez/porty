@@ -7,5 +7,5 @@ export { default as pics } from "./img/pics.jpg";
 
 export { default as shoppy } from "./img/Project/shoppy.jpg";
 export { default as cryptohub } from "./img/Project/crytohub.jpg";
-export { default as chat } from "./img/Project/chat.png";
+export { default as chat } from "./img/Project/tools-categories-XL_(2).webp";
 export { default as Fintech } from "./img/Project/fintech.jpg";

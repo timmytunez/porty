@@ -82,25 +82,25 @@ export const ProjectsData = [
     id: `food-${Date.now()}`,
     name: "E-commerce Shoppy",
     imgSrc: shoppy,
-    gitURL: "https://github.com/timmytunez/my-store",
+    gitURL: "https://shoppy-rho.vercel.app/",
   },
   {
     id: `codepen-${Date.now()}`,
     name: "cryptohub",
     imgSrc: cryptohub,
-    gitURL: "https://github.com/timmytunez/crytohub",
+    gitURL: "https://crytohub.vercel.app/",
   },
-  // {
-  //   id: `chatApp-${Date.now()}`,
-  //   name: "chatApp",
-  //   imgSrc: chat,
-  //   gitURL: "https://github.com/timmytunez/chatapp",
-  // },
+  {
+    id: `chatApp-${Date.now()}`,
+    name: "SKOUTAR",
+    imgSrc: chat,
+    gitURL: "https://skouta-naija.vercel.app/",
+  },
   {
     id: `fintech-${Date.now()}`,
     name: "university website",
     imgSrc: Fintech,
-    gitURL: "https://github.com/timmytunez/university-website",
+    gitURL: "https://university-website-snowy.vercel.app/",
   },
 
 ];
